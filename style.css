@@ -1,0 +1,137 @@
+body {
+    background-image: linear-gradient(#dfa3b7, #6AC9A9);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.input-feild,h1{
+    display: flex;
+    justify-content: center;
+}
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.bin{
+    width: 1.5em;
+    height: 1.5em;
+    order: 2;
+    user-select: none;
+    margin-right: .5em;
+    margin-left: 1em;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    order: 1;
+
+    font-size: 150%;
+}
+li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #C96A8A;
+    border-radius: .3em;
+    border: .15em solid #404e49;
+    width: 80%;
+    padding: .2em;
+    font-size: 1.5vh;
+    margin: .1em 0;
+
+}
+.item-text{
+    margin-left: 0.5em;
+    user-select: none;
+}
+.list-item-l {
+    color: rgb(63, 60, 60);
+    text-decoration: line-through;
+}
+.list-item {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.animatedButton{
+    animation: bounce 0.085s linear forwards;
+}
+
+h1{
+    font-size: 5vh;
+    
+}
+
+#add-task{
+    border: .15em solid rgb(54, 112, 92);
+    background-color: #df5f89;
+    border-radius: .3em;
+    color:white;
+}
+#submit-button{
+    border: .15em solid rgb(54, 112, 92);
+    background-color: #df5f89;
+    border-radius: .3em;
+    color:white;
+}
+#submit-button:hover{
+    border: .15em solid rgb(54, 112, 92);
+    background-color: #df5f8a8e;
+    border-radius: .3em;
+    color:white;
+}
+
+
+.animatedAsk{
+    animation: shrink 0.1s linear forwards;
+    
+}
+@media screen and (max-width: 800) {
+    #submit-button,#add-task {
+        font-size: 7vw; 
+    }
+    li{
+        font-size: 1.5vh;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    #submit-button,#add-task {
+        font-size: 50px; 
+    }
+    li{
+        font-size: 2.5vh;
+    }
+}
+
+@keyframes shrink {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0);
+    }
+  }
+@keyframes bounce {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(0.7);
+    }
+    100%{
+        transform: scale(1);
+    }
+  }
